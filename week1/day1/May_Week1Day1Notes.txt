@@ -1,0 +1,68 @@
+Automation:
+What?
+Why?
+How?
+
+Selenium - API Library
+    - Application Programming Interface
+    - Web based Application (browser) like Amazon, Flipkart
+    - Java, Python, Javascript, Ruby, C#
+
+Why Java?
+Java Basics:
+
+Class - blueprint/ template
+        - common features & actions
+        - features are Variables
+        - actions are methods
+
+IDE (Integrated Development Environment)
+Eclipse
+Intel IJ
+
+Maven Project
+src/main/java - Development code
+src/test/java - Testing code
+
+Addition of 2 numbers (2+3)
+binary language - 0 and 1
+
+JDK - 1.8 (Codes) - > compiler
+Car.java --> compile (machine lang) --> executes
+
+Control + f11 -> shortcut to run
+
+Object:
+It is a reference of a class
+
+Variables:
+color - Data specific to class
+
+datatypes:
+
+A, B, C, D...
+1, 2, 3, 4, 5...
+1.5, 2.26, 6.25..
+
+primitive datatypes: (8)
+1. byte (8 bits) - 2 power 7 - (-128 to +127)
+2. short - 2 power 15 (-32768 to + 32767)
+3. int - 2 power 31
+4. long - 2 power 63 (9876543210L)
+5. float - 2 power 31 - 1.5f
+6. double - 2 power 63
+7. char - character
+8. boolean - true (1) or false (0) - (1 bit)
+
+
+1. Global Variable
+2. Local Variable
+
+Control Flow statements
+1. Conditional statements
+    a) if
+    b) if, else
+    c) if, else if and else
+    d) nested if
+2. Looping Statements
+    a) for loop
