@@ -1,0 +1,40 @@
+Selenium: (Jason Husggins - 2004)
+
+Simon Steward (WebDriver -2005)
+
+2009 - Selenium Webdriver
+QTP/ UFT - Mercury - VBScript
+
+Manual Testing:
+Repetitive tasks - boring
+Time Consuming
+Complex to perform
+
+Selenium WebDriver:
+
+What it can do?
+ - Can automate only web applications
+ - It can talk to browsers like chrome, firefox, edge, IE, Opera, Safari
+ - You can run your script in any platform (OS) - Windows, linux, mac, Android, ios
+ - You can write the script in any languages: java, javascript, python, Ruby, Pearl, C#
+
+What it cannot do?
+ - Can it automate excel sheet? - No!! - (Java libraries - Apache POI)
+ - Can it automate mainframe application? - No!! - (Java libraries - WinAppDriver)
+ - Can it talk to database? - No!! - (Java Libraries - JDBC)
+ - Can it automate mobile based apps? - No!! - (Java Libraries - Appium)
+ - Can we do performance testing? - No!! JMeter, Gatling, Load Runner, Locust
+
+Opensource Automation Tools
+1. Selenium WebDriver --> 40% market share --> 1.4 Million
+2. Puppetter --> Chrome/ Javascript
+3. Cypress --> Chrome, Firsefox/ Javascript
+4. Playwright
+5. Webdriver.io
+
+
+Locators (8):
+1. id --> tag attribute -> 1st priority - may have changing numbers
+2. name --> attribute --> 2nd priority -  cannot use when it is duplicated
+3. linktext --> tag name should be <a> (anchor) --> 3rd priority
+4. classname --> attribute --> 4th priority (do not use classname when it has spaces in between)
