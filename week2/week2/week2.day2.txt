@@ -1,0 +1,141 @@
+Locators (8):
+1. id --> tag attribute -> 1st priority - may have changing numbers
+2. name --> attribute --> 2nd priority -  cannot use when it is duplicated
+3. linktext --> tag name should be <a> (anchor) --> 3rd priority
+4. classname --> attribute --> 4th priority (do not use classname when it has spaces in between)
+5. tagName
+6. partialLinkText --> tag name should be <a> (anchor)
+7. xPath
+8. css --> only top to bottom
+
+xPath - XML Path
+
+1. Absolute xPath - It should start with root tag
+    - It should start with  '/'
+    - Fastest
+/html/body/div[2]/div[2]/div/form/p/input
+
+Mandatory - /tagName
+
+Java - Index starts with 0
+xPath - Index starts with 1
+
+2. Relative xPath
+- Slower
+
+Mandatory - //tagName
+Optional
+
+Basic xPath:
+1. Attribute based xPath:
+//tagName[@attributeName='attributeValue']
+//input[@id='password']
+
+//tagName[@attributeName='attributeValue'][@attributeName='attributeValue'] - AND condition
+//tagName[@attributeName='attributeValue' and @attributeName='attributeValue']
+//tagName[@attributeName='attributeValue' or @attributeName='attributeValue']
+
+//input[@id='password'][@name='PASSWORD']
+//input[@id='password' and @name='PASSWORD']
+//input[@id='password' or @name='password']
+
+//input[@value='Login']
+
+2. Text Based xPath:
+//tagName[text()='textValue']
+//h2[text()='Leaftaps Login']
+
+3. Partial Attribute based xPath:
+//tagName[contains(@attributeName,'attributeValue')]
+
+//input[contains(@class,'Submit')]
+//input[starts-with(@class,'decorative')]
+
+4. Partial Text Based xPath:
+//tagName[contains(text(),'textValue')]
+//h2[contains(text(),'Login')]
+
+5. Index Based xPath:
+(//input[@class='inputLogin'])[2]
+- don't use index beyond 5
+
+
+//input[contains(@id,'createLeadForm_companyName')
+InvalidSelectorException
+
+//input[@id='createLeadForm_primaryEmail' or @class='inputBox']
+
+Advanced xPath:
+1. Parent to Child:
+
+basicXPathOfParent/tagNameOfChild[@attributeName='attributeValue']
+
+//p[@class='top']/input[@id='username']
+
+2. Child to Parent:
+
+basicXPathOfChild/parent::parentTagName[text()='value']
+//input[@id='username']/parent::p[@class='top']
+
+3. GrandParent to GrandChild:
+basicXPathOfGrandParent//childTagName
+//form[@id='login']//input[@name='USERNAME']
+
+4. GrandChild to GrandParent:
+basicXPathOfGrandChild/ancestor::grandParentTagName
+
+//input[@name='USERNAME']/ancestor::form[@id='login']
+
+5. ElderSibling to YoungerSibling:
+basicXPathOfElderSibling/following-sibling::YoungerSiblingTagName
+
+//label[text()='Username']/following-sibling::input[@id='username']
+
+6. YoungerSiblingToElderSibling
+basicXPathOfYoungerSibling/preceding-sibling::ElderSiblingTagName
+
+//input[@id='username']/preceding-sibling::label
+
+7. ElderCousinToYoungerCousin
+basicXPathofElderCousin/following::YoungerCousinTagName
+//input[@id='username']/following::input[@id='password']
+
+8. YoungerCousinToElderCousin
+basicXPathOfYoungerCousin/preceding::ElderCousinTagName
+//input[@id='password']/preceding::input[@id='username']
+
+//label[text()='Password']/preceding::input
+//input/preceding::input
+
+
+1. Identify the first lead id in Leads Table - LeafTaps application
+//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a
+2. Flying machine checkbox - Myntra application
+    - Hover on Men --> Select Jeans
+//input[@value='Flying Machine']/following-sibling::div
+//label[text()='Flying Machine']/div
+3. Subject field in New Case --> Salesforce application
+    - https://login.salesforce.com
+    - ramkumar.ramaiah@testleaf.com
+    - Password@123
+//span[text()='Subject']/parent::label/following-sibling::input
+
+
+Waits:
+9am - arrived before 15 mins
+Max Time will be set, but I will start if it comes earlier
+1. Implicit Wait
+2. Explicit Wait
+
+
+// How to get options
+		List<WebElement> options = dd.getOptions();
+		int size = dd.getOptions().size();
+		
+		for(int i=0; i< size; i++) {
+			WebElement option = options.get(i);
+			String text = option.getText();
+			System.out.println(text);
+		}
+		
+		dd.selectByIndex(size-2);
