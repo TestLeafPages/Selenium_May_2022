@@ -1,0 +1,58 @@
+Inheritance:
+- Acquiring the properties from parent
+
+Parent Class/ Super Class/ Base Class
+Child Class/ Sub Class/ Derived Class
+
+Keyword - extends
+
+
+GrandFather - 2 Houses
+Father - 1 house
+Me - 1 house
+
+Types:
+1. Single Inheritance
+2. Multilevel Inheritance - Audi extends Car extends Vehicle extends Object
+3. Multiple Inheritance - Not supported in java (ambiguity)
+
+
+Access Specifiers:
+1. public - Global Level Access 
+    (inside package (extends, object)) + outside package (extends, object)
+2. protected - (inside package (extends, object)) + outside package (extends)
+3. default - (inside package (extends, object))
+4. private - Only within the Class
+
+Polymorphism:
+More than one forms
+Poly - many
+Morph - forms
+
+1. Method Overloading (Compile Time Polymorphism) - 
+No. of argumets/ type of arguments will be different with same Method name
+
+Class Name: same
+Method Name: Same
+arguments: different
+    - depends on the datatype
+    - depends on the datatype count
+    - depends on the datatype order
+
+2. Method Overriding: (Runtime Polymorphism)
+    - Inheritance should be applied
+    - Same method signature in both parent and child class
+
+Class Name: different
+Method Name: same
+arguments: same
+
+
+Constructor:
+Initialize the object for a class
+
+1. Default Constructor
+2. Parametrized Constructor
+
+static - Memory wil be constant
+No need of Object creation
