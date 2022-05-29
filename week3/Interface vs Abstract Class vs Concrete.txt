@@ -1,0 +1,54 @@
+ Interface vs Abstract Class vs Concrete Class
+
+
+Interface:
+
+- 100% Design --> 100% Abstract !!
+- No implementation allowed
+- You cannot write the body contents for the method !!
+- Keyword to connect interface to class: implements ...
+- Every method should be implemented by the concrete class!!
+- Interfaces cannot have constructors
+- A class can implement more than 1 interface.
+
+1) Concept:
+2) Java Example: List (Interface) --> implements --> ArrayList (Class)
+                 Set, Map, Collection
+3) Selenium Example: WebDriver (Interface) --> implements --> RemoteWebDriver (Class)
+                 SearchContext, Alert
+
+
+Abstract Class:
+
+- Class that can have both implemented and unimplemented (abstract) methods
+- You cannot create object for the abstract class.
+- To access the implemented methods of abstract class, you need to create a concrete class that extends abstract class.
+
+1) Concept:
+2) Java Example: AbstractList (Abstract Class) --> extended by ArrayList (Class)
+3) Selenium Example: By (Abstract Class) -> ByXPath (Class)
+
+
+Concrete Class:
+
+- Class that can have only implemented methods (fully)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
