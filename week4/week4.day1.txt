@@ -1,0 +1,33 @@
+Alert:
+Popup/ dialog box which provides some information
+
+1. Modal Dialog - JavaScript
+
+a) Simple Alert - It has one button and a text message
+        - accept(), getText()
+b) Confirmation Alert - It has 2 buttons and a text message
+        - accept(), dismiss(), getText()
+c) Prompt Alert - It has 2 buttons, a text message and a text input field
+        - accept(), dismiss(), getText(), sendKeys
+
+Characteristics of Alert:
+1. Cannot inspect the alert
+2. Cannot interact with the main window unless the alert is handled
+
+Exception:
+1. UnhandledAlertException - when we try to perform some action without handling alert
+2. NoAlertPresentException - trying to handle alert when no alert is present
+
+
+2. Non Modal Dialog
+
+sweet alert - can be inspected and interated as usual
+
+
+Frames:
+dom within another dom/ html page within another html page
+
+tag name - frame/iframe
+
+Windows:
+In Selenium, both windows and tabs are treated same

@@ -1,0 +1,30 @@
+Handling Multiple WebElements:
+    - findElements
+
+Handling WebTables:
+    - static WebTable
+    - Dynamic WebTable
+
+for loop i
+
+"//table//tr["+i+"]/td[1]"
+
+//table//tr[6]/td[1]
+
+
+driver.findElements(By.xpath("//table[@class='DataTable TrainList TrainListHeader']//tr/td[2]"));
+
+Advanced User Interations(AUI) - Actions:
+
+Keyboard Actions:
+sendKeys
+
+Mouse Actions:
+click
+doubleClick
+contextClick
+dragAndDrop
+moveToElement
+
+
+"//span[text()=\"Men's Fashion\"]" = \ is called escape sequence
