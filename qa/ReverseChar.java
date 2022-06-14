@@ -21,7 +21,11 @@ public class ReverseChar {
 			}
 
 		}
-		System.out.print(Arrays.toString(charArray1));
+
+		for (char ch : charArray1) {
+			System.out.print(ch);
+			
+		}
 	}
 
 }
